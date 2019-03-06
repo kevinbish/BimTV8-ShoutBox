@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35312f"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.hanks.htextview.HTextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="Sign In To Get Involved"
+        android:textColor="@android:color/background_light"
+        android:textSize="45px"
+        htext:animateType="typer"
+        tools:text="Sign In To Get Involved" />
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:gravity="center"
+        android:text="Why do I need to sign in?"
+        android:textColor="@color/colorTitle" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:elevation="0dp"
+        android:text="Sign in with Google"
+        android:visibility="visible">
+
+
+    </com.google.android.gms.common.SignInButton>
+
+    <ImageView
+        android:id="@+id/trident"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_gravity="fill_vertical|center"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="false"
+        android:baselineAlignBottom="false"
+        android:isScrollContainer="false"
+        htext:srcCompat="@drawable/trident" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/giphy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/giphy2"
+        android:visibility="visible" />
+
+
+</FrameLayout>

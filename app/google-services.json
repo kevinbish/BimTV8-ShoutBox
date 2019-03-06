@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "221111163083",
+    "firebase_url": "https://bimtv8-rtmpplayer.firebaseio.com",
+    "project_id": "bimtv8-rtmpplayer",
+    "storage_bucket": "bimtv8-rtmpplayer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221111163083:android:e293083cf05d45d1",
+        "android_client_info": {
+          "package_name": "com.exiax.bimtv8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221111163083-qus78ohq58dolenmvcjg6ne2u63k61c6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exiax.bimtv8",
+            "certificate_hash": "a5653688b3988a84e5e474467898cae3063f9f83"
+          }
+        },
+        {
+          "client_id": "221111163083-h9cb3ru21tr73f07dfki2vngmkup13kr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK-Aou-Et5fh4M1cKe-BQ7zMT0Pjs9W4k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221111163083-h9cb3ru21tr73f07dfki2vngmkup13kr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

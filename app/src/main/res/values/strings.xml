@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BimTV</string>
+    <string name="welcome_msg">Welcome!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>
+    <string name="invite_menu_label">Invite</string>
+    <string name="invitation_message">Join me on BimTV now : https://play.google.com/store/apps/details?id=com.exiax.bimtv8</string>
+    <string name="invitation_cta">Download Now</string>
+    <string name="invitation_title">BimTV Invite</string>
+    <string name="sign_in">Sign In To Get Involved.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fresh_config">Fresh Config</string>
+    <string name="cause_crash">Cause Crash</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8528486810114891/6144953177</string>
+    <string name="giphy">@drawable/giphy</string>
+</resources>

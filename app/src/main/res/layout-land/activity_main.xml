@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.75"
+        android:background="@color/SendButton"
+        android:duration="500"
+        android:fromAlpha="0.0"
+        android:minWidth="500dp"
+        android:toAlpha="1.0"
+        tools:context="com.exiax.bimtv8.MainActivity">
+
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"></include>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/chat_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/TwitchBlack">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:id="@+id/chat_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:background="@color/TwitchBlack"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+
+                android:background="@drawable/border"
+                android:hint="Send a message"
+                android:paddingLeft="8dp"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/background_light"
+                android:textColorHint="@color/colorTitle"
+                android:textColorLink="@null" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#6441a4"
+                android:enabled="false"
+                android:text="SEND"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/TwitchBlack"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/settings"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="false"
+                    android:background="@null"
+                    android:baselineAlignBottom="false"
+                    android:cropToPadding="false"
+                    android:elevation="0dp"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    ads:srcCompat="@drawable/settings" />
+
+                <ImageButton
+                    android:id="@+id/exit"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    ads:srcCompat="@drawable/exit" />
+
+                <ImageButton
+                    android:id="@+id/fulltext"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    ads:srcCompat="@drawable/fullscreen" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@android:color/black"
+        android:minHeight="210dp">
+
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:keepScreenOn="false" />
+
+        <ImageButton
+            android:id="@+id/fullscreen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|right"
+            android:padding="5dp"
+            android:visibility="visible"
+            ads:srcCompat="@drawable/fullold" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center|top"
+
+            android:layout_weight="3.5"
+            android:visibility="visible"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
+    </FrameLayout>
+
+</LinearLayout>
