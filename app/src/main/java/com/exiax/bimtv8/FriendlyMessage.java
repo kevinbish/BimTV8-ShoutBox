@@ -17,6 +17,7 @@ public class FriendlyMessage {
         this.currentTime = currentTime;
     }
 
+    public FriendlyMessage (){ }  //no argument constructor
 
 
 
